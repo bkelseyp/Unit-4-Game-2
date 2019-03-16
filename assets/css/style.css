@@ -1,0 +1,29 @@
+body {
+    margin: 0 auto;
+    width: 960px;
+    background-image:url("../images/sayagata-400px.png");
+}
+  
+  #title-Text {
+    background-color: azure;
+    padding-top:25px;
+    padding-bottom:25px;
+  }
+  .imageSizes{
+      height: 200px;
+      margin: auto;
+  }
+  .instructions {
+      padding-left: 15px;
+      padding-right: 15px;
+  }
+  .center-text {
+      text-align: center;
+  }
+
+  .flex-container {
+    display: flex; /* or inline-flex */
+    flex-direction: row row-reverse;
+    margin-bottom: 15px;
+  }
+  

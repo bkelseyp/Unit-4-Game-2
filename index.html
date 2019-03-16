@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Crystal Collector</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Font Awesome https://fontawesome.com/v4.7.0/icons/ -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="jumbotron jumbotron-fluid bg-danger border border-danger ">
+        <div class="container">
+            <h1 class="display-5 text-white text-center font-weight-bold"><i class="fa fa-diamond"
+                    aria-hidden="true"></i> Crystal Collector</h1>
+        </div>
+    </div>
+
+    <div id="instructionsDiv" class="instructions">
+        <h3 class="center-text text-danger border border-warning p-3">Instructions</h3>
+        <p class="center-text mt-4">The player's goal is to match the number in the left pink box. Each crystal holds a specific randomly generated number. 
+                <br>Click on one of the 4 crystals to see their unique number. Be sure to remember which crystal was clicked and its number. </p>
+    </div>
+
+    <div class="row flex-container">
+        <div class="col w-25 border border-primary mx-2 my-3 rounded p-2" id="Box-Your-Num">
+            <div id="Your-Num" class="card-header text-center bg-danger text-white"><i class="fa fa-chevron-down"
+                    aria-hidden="true"></i> Match This Number <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </div>
+            <h4 class="center-text align-bottom pt-2" id="Your-Num"><span id="randon-Match-Number"><br></span></h4>
+        </div>
+
+        <div class="col w-25 border border-primary mx-2 my-3 rounded p-2" id="Box-Score">
+                <div class="card-header text-center bg-warning"><i class="fa fa-trophy" aria-hidden="true"></i> Score</div>
+            <h4 class="center-text align-midd" id="Score-win">Wins:<span id="win-Number"></span></h4>
+            <h4 class="center-text align-midd" id="Score-lose">Loses:<span id="lose-Number"></span></h4>
+        </div>
+
+
+        <div class="col w-25 border border-primary mx-2 my-3 rounded p-2" id="Box-Your-Num">
+            <div id="Your-Num" class="card-header text-center bg-danger text-white"><i class="fa fa-chevron-down"
+                    aria-hidden="true"></i> Your Number <i class="fa fa-chevron-down" aria-hidden="true"></i></div>
+            <h4 class="center-text align-bottom pt-2" id="Your-Num"><span id="Final-Number"><br></span></h4>
+        </div>
+    </div>
+
+    <div id="crystals" class="row flex-container mb-4">
+        <img src="assets/images/diamond-blue-crystal-vector-1145632.jpg" id="Box-Crystal-1"
+            class="imageSizes border border-danger p-2">
+        <img src="assets/images/low-poly-crystal-bright-pink-heart-vector-14839766.jpg" id="Box-Crystal-2"
+            class="imageSizes border border-danger p-2">
+        <img src="assets/images/red-crystal-heart-isolated-on-white-background-vector-19666913.jpg" id="Box-Crystal-3"
+            class="imageSizes border border-danger p-2">
+        <img src="assets/images/yellow-mineral-crystal-gem-precious-gemstone-or-vector-22950167.jpg" id="Box-Crystal-4"
+            class="imageSizes border border-danger p-2">
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+
+</html>
